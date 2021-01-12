@@ -6,6 +6,18 @@
     (function ($) {
     "use strict"; // Start of use strict
 
+    $("#type").on("change", function(e){
+        let $ifg = $("#instrument-form-group")
+        if( $(this).val() === 'lesson' ){
+            $ifg.attr("hidden", false);
+            $ifg.find('select')[0].selectedIndex = 0;
+        }else{
+            $ifg.attr("hidden", true);
+            $ifg.find('select').val('');
+        }
+        console.log($ifg.find('select').val());
+    });
+
     $("#contact-form").on("submit", (e)=>{
         e.preventDefault();
 
