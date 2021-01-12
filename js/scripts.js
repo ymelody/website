@@ -5,9 +5,9 @@
     */
     (function ($) {
     "use strict"; // Start of use strict
-
+    let $ifg = $("#instrument-form-group");
     $("#type").on("change", function(e){
-        let $ifg = $("#instrument-form-group")
+       
         if( $(this).val() === 'lesson' ){
             $ifg.attr("hidden", false);
             $ifg.find('select')[0].selectedIndex = 0;
@@ -39,6 +39,7 @@
                 },10000)
             });
             $form[0].reset();
+            $ifg.attr("hidden", true);
         });
 
         return false;
