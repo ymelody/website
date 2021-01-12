@@ -10127,6 +10127,7 @@ body {
 #mainNav {
   min-height: 3.5rem;
   background-color: #fff;
+  background: linear-gradient(90deg, rgba(255,255,255,0.30017944677871145) 0%, rgba(255,255,255,0.9472382703081232) 70%, rgba(255,255,255,1) 100%);
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10141,6 +10142,10 @@ body {
   color: #000000;
   font-weight: 700;
   padding: 0.9rem 0;
+  visibility: hidden;
+}
+#mainNav.navbar-shrink .navbar-brand{
+  visibility: visible;
 }
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
