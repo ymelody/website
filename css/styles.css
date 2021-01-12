@@ -10163,6 +10163,7 @@ body {
     border-bottom: none;
     background-color: transparent;
     transition: background-color 0.3s ease-in-out;
+    background: transparent;
   }
   #mainNav .navbar-brand {
     padding: 0.5rem 0;
