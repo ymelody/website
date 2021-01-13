@@ -10142,10 +10142,11 @@ body {
   color: #000000;
   font-weight: 700;
   padding: 0.9rem 0;
-  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 #mainNav.navbar-shrink .navbar-brand{
-  visibility: visible;
+  opacity: 1;
 }
 #mainNav .navbar-nav .nav-item:hover {
   color: fade(#fff, 80%);
